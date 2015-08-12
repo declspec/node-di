@@ -1,17 +1,22 @@
-var di = require("./index");
+var di = require("./src/index");
 
 var app = di.module("app", []);
 
-app.factory("$httpq", function() {
+app.constant("DepType", {
+	UNKNOWN: 0,
+	CIRCULAR: 1,
+	SIMPLE: 2
+});
+
+app.factory("$httpq", [ "DepType", function(DepType) {
     return {
         log: function(x) {
-            console.log("$httpq: " + x);
+            console.log("$httpq: " + DepType.SIMPLE);
         }
     };
-});
+}]);
 
 
 di.bootstrap([ "app" ]).invoke(["$httpq", function($httpq) {
-    console.log("here");
     $httpq.log("test");
 }]);
