@@ -1,0 +1,17 @@
+{
+  "name": "node-di",
+  "version": "1.0.0",
+  "description": "Node dependency injector based off of AngularJs's DI framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "Depedency",
+    "Injection",
+    "ioc"
+  ],
+  "author": "Jason Larke",
+  "license": "GPL"
+}
