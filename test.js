@@ -1,4 +1,4 @@
-var di = require("./src/index");
+var di = require("./index");
 
 var app = di.module("app", []);
 
@@ -17,6 +17,6 @@ app.factory("$httpq", [ "DepType", function(DepType) {
 }]);
 
 
-di.bootstrap([ "app" ]).invoke(["$httpq", function($httpq) {
+var injector = di.injector([ "app" ]).invoke(["$httpq", function($httpq) {
     $httpq.log("test");
 }]);
