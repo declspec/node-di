@@ -1,5 +1,5 @@
 {
-  "name": "node-di",
+  "name": "node-dpi",
   "version": "1.0.0",
   "description": "Node dependency injector based off of AngularJs's DI framework",
   "main": "index.js",
