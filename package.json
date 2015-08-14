@@ -2,6 +2,7 @@
   "name": "node-dpi",
   "version": "1.0.0",
   "description": "Node dependency injector based off of AngularJs's DI framework",
+  "repository":"https://github.com/declspec/node-dpi",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
