@@ -13,5 +13,9 @@
     "ioc"
   ],
   "author": "Jason Larke",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "q": "~1.4.1",
+    "lodash": "~3.10.1"
+  }
 }

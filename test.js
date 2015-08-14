@@ -1,10 +1,7 @@
-var di = require("./index"),
-    $RouteProvider = require("./route");
+var di = require("./index");
 
-var app = di.module("app", []);
-
-app.provider("$route", $RouteProvider);
-
-di.injector([ "app" ]).invoke(["$route", function($route) {
-    console.log("here");
+di.injector(["di"]).invoke([ "$controller", "$http", function($controller, $http) {
+    $http.get("http://serverfault.com/questions/674974/how-to-mount-a-virtualbox-shared-folder").then(function(obj) {
+        console.log(obj);
+    });
 }]);

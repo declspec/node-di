@@ -4,7 +4,7 @@ var diModule = require("./lib/di-module"),
     injector = require("./lib/injector");
 
 // Initialize all the core 'di' functionality    
-require("./lib/di/core")(diModule);
+require("./lib/core")(diModule);
     
 module.exports = {
     module:     diModule,
