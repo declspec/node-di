@@ -1,6 +1,6 @@
 {
   "name": "node-dpi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node dependency injector based off of AngularJs's DI framework",
   "repository":"https://github.com/declspec/node-dpi",
   "main": "index.js",
