@@ -1,8 +1,8 @@
 {
   "name": "node-dpi",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Node dependency injector based off of AngularJs's DI framework",
-  "repository":{
+  "repository": {
     "type": "git",
     "git": "https://github.com/declspec/node-dpi"
   },
@@ -18,7 +18,8 @@
   "author": "Jason Larke",
   "license": "MIT",
   "dependencies": {
-    "q": "~1.4.1",
-    "lodash": "~3.10.1"
+    "core-util-is": "^1.0.2",
+    "lodash": "~3.10.1",
+    "q": "~1.4.1"
   }
 }
