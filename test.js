@@ -27,6 +27,10 @@ module2.factory("LogService", function() {
     };
 });
 
+module2.config(function() {
+    console.log("running module2 configuration"); 
+});
+
 module3.run(["ExampleService", "module2:LogService", function(ExampleService, LogService) {
     console.log("Expecting no 'module2' prefix:");
     ExampleService.test("Hello, world");
@@ -34,4 +38,4 @@ module3.run(["ExampleService", "module2:LogService", function(ExampleService, Lo
     LogService.log("Hello, world");
 }]);
 
-var injector = di.injector([ "module3" ], true);
+var injector = di.injector([ "module2", "module3" ], true);
