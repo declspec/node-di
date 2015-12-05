@@ -1,7 +1,7 @@
 "use strict";
 
 var diModule = require("./lib/di-module"),
-    injector = require("./lib/modular-injector");
+    injector = require("./lib/injector");
 
 // Initialize all the core 'di' functionality    
 require("./lib/core")(diModule);
